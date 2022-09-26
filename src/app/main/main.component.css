@@ -1,0 +1,67 @@
+@keyframes rotateCircles {
+
+  /*
+  !! Don't Change Animation name!!
+  The name is selected by the ts-part of the component.
+  */
+
+from{
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+to{
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+}
+
+app-circle-slice{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  overflow: visible;
+}
+
+#slice-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 1s ease-out;
+  animation: rotateCircles 150s linear infinite;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  overflow: visible;
+  display: block;
+  height: 1%;
+  width: 1%;
+}
+
+#slice-wrapper.faster{
+  animation-duration:10s
+}
+
+#item-wrapper{
+  overflow: visible;
+  display: block;
+  min-height: 10%;
+  min-width: 10%;
+}
+
+app-item{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  overflow: visible;
+  display: block;
+  min-width: 1%;
+  min-height: 1%;
+
+}
+
+
+div,a,a:visted,a:hover,a:active,span,article{
+  color: #e6d7e6;
+}

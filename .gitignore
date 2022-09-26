@@ -30,7 +30,7 @@ yarn-error.log
 
 # Miscellaneous
 /.angular/cache
-.sass-cache/
+.sass-cache/z
 /connect.lock
 /coverage
 /libpeerconnection.log
@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+#Licensed icons
+assets/

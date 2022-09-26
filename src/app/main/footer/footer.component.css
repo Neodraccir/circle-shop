@@ -1,0 +1,89 @@
+
+@font-face {
+  font-family: chewy;
+  src: url('src/assets/fonts/Chewy.ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+a{
+  display: inline-block;
+  position: fixed;
+  left : 50%;
+  transform: translateX(-50%);
+  width:25vw;;
+  font-family:chewy;
+  text-align: center;
+  bottom: 0.5rem;
+  transition: all 0.5s ease-out;
+  text-decoration:none;
+  z-index:1;
+}
+
+a:hover{
+  cursor: pointer;
+  bottom: 0.65rem;
+}
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  color: #c95a18
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #ffd900;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: #c95a18
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #c95a18;
+  font-family: chewy;
+}
+.popup .close {
+  position: absolute;
+  top: 2vh;
+  right: 0vw;
+  transform: translateX(45%);
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #c95a18;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  font-family: chewy;
+  max-height: 30%;
+  overflow: auto;
+  color: #c95a18
+}
+
+@media screen and (max-width: 700px){
+
+  .popup{
+    width: 70%;
+  }
+}

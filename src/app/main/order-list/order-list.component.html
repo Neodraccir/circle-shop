@@ -1,0 +1,7 @@
+<ul>
+  <li *ngIf="checkValue(selections.type)">{{path=="type"?">> ":""}}<a routerLink='type' class> Typ <span>{{selections.type}}</span></a></li>
+  <li *ngIf="checkValue(selections.flavour)">{{path=="flavour"?">> ":""}}<a routerLink= 'flavour'>1. Kugel <span>{{selections.flavour}}</span></a></li>
+  <li *ngIf="checkValue(selections.flavour2) ">{{path=="flavour2"?">> ":""}}<a routerLink='flavour2'>2. Kugel  <span>{{selections.flavour2}}</span></a></li>
+  <li *ngIf="checkValue(selections.drink )">{{path=="drink"?">> ":""}}<a routerLink='drink'>Getränk <span>{{selections.drink}}</span></a></li>
+  <li *ngIf="checkValue(selections.drink )">{{path=="wait"?">> ":""}}<a routerLink='/wait'>Status wartend<br>(für immer...)</a></li>
+</ul>

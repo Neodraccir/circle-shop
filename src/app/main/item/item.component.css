@@ -1,0 +1,22 @@
+img{
+  max-width: 17vw;
+  max-height: 17vw;
+  width: 15vh;
+  height: 15vh;
+  position: absolute;
+  pointer-events:auto;
+
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+#divItem{
+  overflow: visible;
+  display: block;
+  position:absolute;
+  min-height: 5%;
+  min-width: 5%;
+
+}

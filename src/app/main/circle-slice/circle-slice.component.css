@@ -1,0 +1,22 @@
+svg {
+  height: 25vh;
+  width: 25vh;
+  pointer-events: none;
+
+}
+path{
+  transition: all 0.3s ease-out;
+  pointer-events: all;
+
+}
+
+path:hover{
+  cursor: pointer;
+  stroke-width: 25;
+}
+
+.stroke{
+  stroke-width: 25;
+}
+
+

@@ -1,0 +1,18 @@
+app-circle-menu{
+  overflow: visible;
+  display: block;
+  height: 1%;
+  width: 1%;
+}
+
+app-header{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+app-footer{
+  position: fixed;
+  bottom: 0;
+  overflow:visible;
+}

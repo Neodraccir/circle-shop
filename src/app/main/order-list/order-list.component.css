@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: chewy;
+  src: url('src/assets/fonts/Chewy.ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+ul{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  list-style: none;
+  margin: 0;
+  transform: translateX(-1rem);
+}
+
+li{
+  padding: 0.2rem 0;
+  font-size: 1.rem;
+  font-family: chewy;
+}
+
+span{
+  position: relative;
+  left: 0.5rem
+}
+
+a, a:visited, a:hover, a:active{
+  text-decoration: none;
+}
+
+span{
+  color: #C9BBC9;
+}
+

@@ -1,0 +1,52 @@
+
+  <app-header></app-header>
+  <app-text
+    [text]="pageText"
+  ></app-text>
+
+  <div  #sliceWrapper id="slice-wrapper">
+
+    <router-outlet
+      (activate)="buildNextPage($event)"
+    ></router-outlet>
+
+    <app-circle-slice
+      *ngFor="let slice of circleArray; let i = index"
+      (mouseenter)="changePlayState(false)"
+      (mouseleave)="changePlayState(true)"
+      (newDegree)="handleNewDegree($event)"
+      [circleData]="{
+          id          : circleArray[i].id,
+          circleColor : circleArray[i].circleColor,
+          circleStart : circleArray[i].circleStart,
+          circleEnd   : circleArray[i].circleEnd,
+          itemSrc     : circleArray[i].itemSrc,
+          degree      : circleArray[i].degree,
+          itemName    : circleArray[i].itemName,
+          link        : nextPage
+        }"
+      [circular-animation-play-state]="playState"
+    ></app-circle-slice>
+  </div>
+
+  <div id="item-wrapper">
+    <app-item
+    *ngFor="let slice of circleArray; let i = index"
+    (hovered)="handleHover($event)"
+    [circular-animation-play-state]="playState"
+    [circleData]="{
+      id  : circleArray[i].id,
+      circleColor : circleArray[i].circleColor,
+      circleStart : circleArray[i].circleStart,
+      circleEnd : circleArray[i].circleEnd,
+      itemSrc : circleArray[i].itemSrc,
+      degree  : circleArray[i].degree,
+      itemName  : circleArray[i].itemName,
+      link : nextPage
+    }"
+    >
+    </app-item>
+  </div>
+
+  <app-order-list [selections]="selections" [path]="currentPath"></app-order-list>
+

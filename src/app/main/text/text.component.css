@@ -1,0 +1,33 @@
+
+@font-face {
+  font-family: chewy;
+  src: url('src/assets/fonts/Chewy.ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+div{
+  position: fixed;
+  font-size: 1.3rem;
+  top : 3.5rem;
+  left: 2rem;
+}
+
+div, article, span{
+  font-family: chewy;
+
+}
+
+
+article:nth-child(2)>span{
+  color: #82ffc1;
+}
+
+article:nth-child(3)>span{
+  color: #a6e4ff;
+}
+
+
+
+

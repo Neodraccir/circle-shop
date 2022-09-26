@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+  height: 100%;
+  width: 100%;
+
+}
+
+app-root{
+  height: 1%;
+  width: 1%;
+}
+
+html, body, root-root{
+max-width: 99vw;
+max-height: 99vh;
+overflow: hidden;
+background-color: #F5FBFF;
+}
+
+article, div, a, span, li, ul{
+  color: #ff529e;
+}
+
+

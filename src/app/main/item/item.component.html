@@ -1,0 +1,15 @@
+<div id="divItem" #item
+  >
+</div>
+
+  <img
+  #webp
+  [src]="imgSrc" alt=""
+  [style.left]="top"
+  [style.right]="left"
+  [style.transform]="transform"
+  (click)="handleSelection()"
+  (mouseenter)="changePlayState(false)"
+  (mouseleave)="changePlayState(true)"
+  [style.pointer]
+  />
